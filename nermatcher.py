@@ -31,6 +31,6 @@ tokens = [token.text for token in doc if token.text not in punctuation]
 print(len(terminy), len(tokens))
 
 end = time.time()
-print("Готов вкалывать", end-start)
+print("Готов вкалывать!", end-start)
 
 displacy.serve(doc, style='ent')
